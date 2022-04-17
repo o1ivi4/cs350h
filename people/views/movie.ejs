@@ -1,0 +1,31 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>WMDB</title>
+        <link rel="stylesheet" href="/styles.css" />
+        <!-- loading jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <h1>Movie Details</h1>
+
+        <p>tt: <%= movie.tt %></p>
+        <p>Title: <%= movie.title %></p>
+        <p>Release: <%= movie.release %></p>
+        <p>Director: <%= movie.director %></p>
+        <p>Added By: <%= movie.addedby %></p>
+        <p>Cast: </p>
+        <ul id="castlist">
+            <% for(var i = 0; i < movie.cast.length; i++) {%>
+                <li class="castmember">
+                <span><%= movie.cast[i] %></span>
+                </li>
+            <% } %>
+        </ul>
+
+        <script src="/main.js"></script>
+    </body>
+</html>
