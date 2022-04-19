@@ -46,7 +46,7 @@ client.connect()
 
         app.get('/movies', (req, res) => {
             // parse request url, pull out required info, create dynamic expression
-            const query = new RegExp('.*'+req.query.movie+'.*');
+            const query = new RegExp(req.query.movie, "i");
             // sort returned docs in asc order a-z
             const filter = {sort: {title: 1}};
 
