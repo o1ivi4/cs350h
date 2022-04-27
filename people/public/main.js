@@ -13,7 +13,7 @@ if (search) {
             $("#searchresults").empty();
             response.forEach(element => {
                 const a = $("<a>")
-                    .text(element.title)
+                    .text(element.title + " (" + element.release + ")")
                     .attr("href", "/tt/" + element.tt);
                 $("<li>").append(a).appendTo("#searchresults");
             });

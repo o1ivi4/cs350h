@@ -12,10 +12,12 @@
         <section data-position="search-quote">
             <div>
                 <h2>Search</h2>
+                <br><br>
                 <label for="query">Search:</label>
                 <input type="text" id="query" name="query">
                 <button id="search-button">Search</button>
             </div><br><br>
+
             <div>
                 <h2>Search Results</h2>
                 <ul id="searchresults">
@@ -25,20 +27,16 @@
                         </li>
                     <% } %>
                 </ul>
+                <br>
             </div>
+
+            <p> This application is a simple knockoff of the <a href="https://www.imdb.com/">IMDB</a> </p>
+            <p> An example of an actor: </p>
+            <p> An example of a movie: <a href="/tt/5311514">Your Name (2016)</a></p>
+            <p> V 1.0, April 27 2022</p>
+
         </section>
         <br>
-
-        <!-- <section data-position="quotes">
-            <h2> Movies </h2>
-            <ul class="quotes">
-                <% for(var i = 0; i < movies.length; i++) {%>
-                    <li class="quote">
-                    <span><%= movies[i].title %></span>
-                    </li>
-                <% } %>
-            </ul>
-        </section> -->
 
         <script src="/main.js"></script>
     </body>

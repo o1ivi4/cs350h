@@ -12,12 +12,12 @@
     <body>
         <h1>Movie Details</h1>
 
-        <p>tt: <%= movie.tt %></p>
-        <p>Title: <%= movie.title %></p>
-        <p>Release: <%= movie.release %></p>
-        <p>Director: <%= movie.director %></p>
-        <p>Added By: <%= movie.addedby %></p>
-        <p>Cast: </p>
+        <p><span class="green">tt:</span> <%= movie.tt %></p>
+        <p><span class="green">Title:</span> <%= movie.title %></p>
+        <p><span class="green">Release:</span> <%= movie.release %></p>
+        <p><span class="green">Director:</span> <%= movie.director %></p>
+        <p><span class="green">Added By:</span> <%= movie.addedby %></p>
+        <p class="green">Cast: </p>
         <ul id="castlist">
             <% for(var i = 0; i < movie.cast.length; i++) {%>
                 <li class="castmember">

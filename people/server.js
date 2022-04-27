@@ -37,11 +37,9 @@ client.connect()
         app.use(express.static('public'));
 
         app.get('/', (req, res) => {
-            movie.find().toArray()
-                .then(results => {
-                    res.render('index.ejs', { movies: results});
-                })
-                .catch(error => console.error(error));
+
+            res.render('index.ejs', { movies: ""});
+
         });
 
         app.get('/movies', (req, res) => {

@@ -1,7 +1,6 @@
 h1, h2 {
   color: rgb(70, 122, 70);
   margin: 0;
-  padding-bottom: 1em;
 }
 
 html,
@@ -22,6 +21,11 @@ body {
 .field-row .field-container {
   width: 70%;
   float: left;
+}
+
+.green {
+  color:  rgb(70, 122, 70);
+  font-weight: bold;
 }
 
 /* html {

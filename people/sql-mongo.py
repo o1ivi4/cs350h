@@ -37,17 +37,7 @@ def iterate_nm(conn, movies):
             movie['cast'] = []
             if len(cast) > 0: 
                 for person in cast: 
-                    movie['cast'].append(person['nm'])
-                    # for key in person: 
-                    #     # set none to null -> global constant!
-                    #     if person[key] == None: 
-                    #         person[key] = "null"
-
-                    #     # set datetime object to js-friendly object
-                    #     elif key == 'birthdate' and person[key] != None:
-                    #         date = person[key].strftime("%m/%d/%Y")
-                    #         person[key] = date
-                # movie['cast'] = cast     
+                    movie['cast'].append(person['nm'])  
             
         print("Successfully inserted nm credits into movielist")
         return movies
